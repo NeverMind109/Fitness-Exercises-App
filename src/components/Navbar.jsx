@@ -7,7 +7,7 @@ import Logo from '../assets/images/Logo.png'
 const Navbar = () => {
   return (
       <Stack direction='row' justifyContent='space-around' sx={{ gap: { sm: '122px', xs: '40px' }, pt: { sm: '32px', xs: '20px'}, justifyContent: 'none'}} px='20px'>
-        <Link to='/'>
+        <Link to='/Fitness-Exercises-App/'>
           <img src={Logo} style={{width: '48px', height: '48px', margin: { sm: '0 20px', xs: '0 10px' }}} alt='Logo' />
         </Link>
         <Stack direction='row' alignItems='flex-end' gap='40px' fontSize='24px'>

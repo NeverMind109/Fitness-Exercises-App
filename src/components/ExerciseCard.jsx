@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Button, Stack, Typography } from '@mui/material'
 
 const ExerciseCard = ({ exercise }) =>  (
-  <Link className='/Fitness-Exercises-App/exercise-card' to={`/exercise/${exercise.id}`}>
+  <Link className='exercise-card' to={`/Fitness-Exercises-App/exercise/${exercise.id}`}>
     <img src={exercise.gifUrl} alt={exercise.name} loading='lazy' />
     <Stack direction='row'>
       <Button sx={{ fontSize: '14px', textTransform: 'capitalize', color: '#fff', background: '#ffa9a9', borderRadius: '20px', ml: '21px', }}>{exercise.bodyPart}</Button>
