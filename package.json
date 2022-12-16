@@ -2,8 +2,11 @@
   "name": "fitness-exercises-app",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://NeverMind109.github.io/Fitness-Exercises-App",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
