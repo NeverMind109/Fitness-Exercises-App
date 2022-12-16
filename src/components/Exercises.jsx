@@ -4,6 +4,7 @@ import { Box, Stack, Typography } from '@mui/material';
 
 import { exerciseOptions, fetchData } from '../utils/fetchData.jsx';
 import ExerciseCard from './ExerciseCard'
+import Loader from './Loader.jsx';
 
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -34,7 +35,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
     window.scrollTo({ top: 1800, behavior: 'smooth' })
   }
 
-  console.log(currentExercises);
+  if (!currentExercises.length) return <Loader />;
 
   return (
     <Box id='exercises' 
